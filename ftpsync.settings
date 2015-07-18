@@ -6,8 +6,8 @@
 
 		"host": "server33.cretaforce.gr",
 		"username": "skoumas",  // or null for anonymous login
-		"password": "6658709321",
-		"path": "/austerity-measure-generator.com/www",
+		"password": "papanik2015",
+		"path": "/random-austerity-measure-generator.com/www",
 
 		"upload_on_save": true, // set *false* if you do not want to upload on save!
 

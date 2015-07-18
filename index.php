@@ -1,9 +1,9 @@
 <? 
 	ini_set('display_errors', 1); 
 	error_reporting(E_ALL);
-	$mainTitle = "Austerity Meausure Generator";
-	$name = isset($_GET['name']) ?  $_GET["name"] : null;
-	$title = ($name==null) ?  $mainTitle :  "Your New Austerity Measure is " . $name . " " . $mainTitle;
+	$mainTitle = "Random Austerity Meausure Generator";
+	$measure = isset($_GET['measure']) ?  $_GET["measure"] : null;
+	$title = ($measure==null) ?  $mainTitle :  "Your New Austerity Measure is '" . $measure . "'' " . $mainTitle;
 
 	$file = 'counter.txt';
 	$counter = file_get_contents($file);
@@ -21,16 +21,16 @@
 	Europian, Union, Austerity, Measures, Grexit, Tsipras, Merkel, Soimple, Parliament
 	ThisisaCoup, Coup, Finance, collapse, Poor, Rich, Music">
 
-	<? if ($name == null): ?>
+	<? if ($measure == null): ?>
 		<meta property="og:title" content="<?=$mainTitle?>" />
 		<meta property="og:description" content="The Random Austerity Measures Generator
 		will generate a random Europian Union Austerity measure for you..." />
 	<? else : ?>
-		<meta property="og:title" content="Click here to see my Cafeteria name" />
+		<meta property="og:title" content="Click here to see my Austerity Measure..." />
 		<meta property="og:description" content="I created my own random austerity measure using <?= $mainTitle ?>. Click this link to see it..." />
 	<? endif;?>
 	<meta property="og:image" content="images/logo.png" />
-	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="icon" type="image/png" href="/images/favicon.png" />
 
 
 </head>
@@ -44,7 +44,7 @@
 
          <!-- FIRST SCREEN -->
           <div id="first" class="inner cover" >
-          	<a href="http://www.greek-cafeteria-name-generator.com"><img src="images/logo.png"  width="200"></a>
+          	<a href="http://www.random-austerity-measure-generator.com"><img src="images/logo.png"  width="150"></a>
             <h1 class="cover-heading">Austerity Measures Generator</h1>
             <p class="lead">Want to apply an austerity measure and still not sure what?<bR>Here is your tool...</p>
             
@@ -70,7 +70,7 @@
           
           <!-- FINAL SCREEN -->
           <div id="final" class="inner cover" >
-          	<a href="http://www.greek-cafeteria-name-generator.com"><img src="images/logo.png" width="200"></a>
+          	<a href="http://www.random-austerity-measure-generator.com"><img src="images/logo.png" width="150"></a>
 			<p class="lead" id="loading_title">Your austerity measure is....</p>
 			<h1 class="cover-heading" id="final_name"></h1><p class="lead">
              <p clas="lead">
@@ -82,11 +82,12 @@
 
           <!-- CAME FROM LINKS -->
           <div id="link" class="inner cover" >
-          	<img src="images/logo.png" width="200">
+          	<a href="http://www.random-austerity-measure-generator.com"><img src="images/logo.png" width="150"></a>
 			<p class="lead">My austerity measure is....</p>
-			<h1 class="cover-heading" id="link_name">"<?= $name ?>"</h1>
+			<h1 class="cover-heading" id="link_name">"<?= $measure ?>"</h1>
 			<br><br>
 			<h4>  Feeling like demanting some austerity measures? </h4>
+			 
 			<p class="lead">
               <a href="#" onClick="generateName()" class="btn btn-lg btn-danger">Generate Yours</a>
             </p>
@@ -96,18 +97,30 @@
 
 	      <div class="mastfoot">
 	        <div class="inner">
-	          <p>Website made for fun. <br>Help Greek people overcome crisis by enjoying a nice coffe at the Greek islands!</p>
+	        <div class="fb-like" data-href="https://www.facebook.com/randomausteritymeasuregenerator" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+<br>
+	        <p>Website made for fun. <br>
+	          	Help Greek people overcome crisis by enjoying a nice coffee at the Greek islands!</p>
 	        </div>
 	      </div>
 
         </div>
 
-      </div>
+      </div> 
 
     </div>
 
 	<!-- SCRIPTS -->
-	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=133816256822971";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/amg.js"></script>
@@ -119,12 +132,12 @@
 			reset();
 		});
 		$("#button_share").click(function(){
-			facebookShare("http://www.greek-cafeteria-name-generator.com/?name=" + name,
-			 "Check my Greek Cafeteria Name and Generate Yours...",
-			 "I created my own Greek Cafeteria name using Greek Cafeteria Name Generator.",
-			 "http://www.greek-cafeteria-name-generator.com/images/facebook.jpg");	 
-		});$("#first").css({"display":"block"});
-/*
+			facebookShare("http://www.random-austerity-measure-generator.com/?measure=" + measure,
+			 "Check my Austerity Measure and Generate Yours...",
+			 "I created my own Austerity Measure using the Random Austerity Measure Generator.",
+			 "http://www.random-austerity-measure-generator.com/images/facebook.jpg");	 
+		});
+
 		<? if ($measure != null) : ?>
 			$("#link").css({"display":"block"});
 			$("#first").css({"display":"none"});
@@ -132,7 +145,7 @@
 		<? else : ?>
 			$("#first").css({"display":"block"});
 		<? endif; ?>
-*/
+
 	</script>
 	
 	<script>
@@ -141,7 +154,7 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-65029286-1', 'auto');
+	  ga('create', 'UA-65029286-2', 'auto');
 	  ga('send', 'pageview');
 
 	</script>
