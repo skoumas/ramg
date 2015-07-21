@@ -74,6 +74,7 @@
 			<p class="lead" id="loading_title">Your austerity measure is....</p>
 			<h1 class="cover-heading" id="final_name"></h1><p class="lead">
              <p clas="lead">
+    			<a href="#" id="button_twitter_share" class="btn btn-lg btn-info"><i class="fa fa-twitter"></i> Share</a>
               <a href="#" id="button_share" class="btn btn-lg btn-info"><i class="fa fa-facebook"></i> Share</a>
               <a href="#" id="button_reset" class="btn btn-lg btn-danger"><i class="fa fa-refresh"></i> Retry</a>
             </p>
@@ -97,8 +98,28 @@
 
 	      <div class="mastfoot">
 	        <div class="inner">
-	        <div class="fb-like" data-href="https://www.facebook.com/randomausteritymeasuregenerator" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-<br>
+
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- RandomAusterity -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-6890129091584038"
+		     data-ad-slot="6999704747"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<div class="fb-page" style="display:none;height:50px!important"
+		  data-href="https://www.facebook.com/randomausteritymeasuregenerator"
+		  data-width="380" data-height="50" 
+		  data-hide-cover="true" data-show-facepile="false" 
+		  data-show-posts="false"></div>
+
+		  <div class="fb-like" style="background-color:#fff;padding:10px; border-radius:5px;text-align:center" data-href="https://www.facebook.com/randomausteritymeasuregenerator" data-layout="standard" data-action="like" data-colorscheme="light" data-show-faces="true" data-share="true"></div>
+
+		  <br><br>
 	        <p>Website made for fun. <br>
 	          	Help Greek people overcome crisis by enjoying a nice coffee at the Greek islands!</p>
 	        </div>
@@ -136,6 +157,9 @@
 			 "Check my Austerity Measure and Generate Yours...",
 			 "I created my own Austerity Measure using the Random Austerity Measure Generator.",
 			 "http://www.random-austerity-measure-generator.com/images/facebook.jpg");	 
+		});
+		$("#button_twitter_share").click(function(){
+			twitterShare(measure);
 		});
 
 		<? if ($measure != null) : ?>
