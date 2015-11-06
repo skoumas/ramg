@@ -112,15 +112,15 @@
 		</script>
 
 		<div class="fb-page" style="display:none;height:50px!important"
-		  data-href="https://www.facebook.com/randomausteritymeasuregenerator"
+		  data-href="https://www.facebook.com/skoumas"
 		  data-width="380" data-height="50" 
 		  data-hide-cover="true" data-show-facepile="false" 
 		  data-show-posts="false"></div>
 
-		  <div class="fb-like" style="background-color:#fff;padding:10px; border-radius:5px;text-align:center" data-href="https://www.facebook.com/randomausteritymeasuregenerator" data-layout="standard" data-action="like" data-colorscheme="light" data-show-faces="true" data-share="true"></div>
+		  <div class="fb-like" style="background-color:#fff;padding:10px; border-radius:5px;text-align:center" data-href="https://www.facebook.com/skoumas" data-layout="standard" data-action="like" data-colorscheme="light" data-show-faces="true" data-share="true"></div>
 
 		  <br><br>
-	        <p>Website made for fun. <br>
+	        <p>Website made for fun by <a href="http://www.skoumas.com"> George Papanikolaou aka Skoumas</a> <br>
 	          	Help Greek people overcome crisis by enjoying a nice coffee at the Greek islands!</p>
 	        </div>
 	      </div>
